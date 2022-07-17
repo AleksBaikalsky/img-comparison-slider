@@ -3,9 +3,11 @@
   --divider-color: #fff;
   --divider-shadow: none;
   --default-handle-width: 50px;
+  --default-handle-height: auto;
   --default-handle-color: #fff;
   --default-handle-opacity: 1;
   --default-handle-shadow: none;
+  --default-handle-background: none;
 
   position: relative;
   display: inline-block;
@@ -135,8 +137,10 @@
 
 .default-handle {
   width: var(--default-handle-width);
+  height: var(--default-handle-height);
   opacity: var(--default-handle-opacity);
   transition: all 1s;
+  background: var(--default-handle-background);
   filter: drop-shadow(var(--default-handle-shadow));
   path {
     stroke: var(--default-handle-color);
